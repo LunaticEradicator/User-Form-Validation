@@ -53,41 +53,56 @@
                             <div class="formOne">
                                 <div>
                                     <label for="firstName">First Name</label>
-                                    <input type="text" name="firstName" id="firstName">
+                                    <input type="text" name="firstName" id="firstName" placeholder=" " autocomplete=off>
+                                    <p class="error-message">Enter Your First Name</p>
+
                                 </div>
 
                                 <div>
                                     <label for="lastName">Last Name</label>
-                                    <input type="text" name="lastName" id="firstName">
+                                    <input type="text" name="lastName" id="lastName" placeholder=" " autocomplete=off>
                                 </div>
                             </div>
 
                             <div class="formTwo">
                                 <div>
                                     <label for="emailId">Email</label>
-                                    <input type="email" name="emailId" id="emailId">
+                                    <input type="email" name="emailId" id="emailId" placeholder=" " autocomplete=off
+                                        pattern="^([a-z\d\.-\_])+@([a-z\d-])+\.([a-z]{2,8})(\.[a-z]{2,8})?$">
+                                    <p class="error-message">Email must be a valid address, e.g me@mydomain.com</p>
                                 </div>
 
                                 <div>
                                     <label for="phoneNumber">Phone Number</label>
-                                    <input type="tel" name="phoneNumber" id="phoneNumber"> <!-- inputmode="numeric" -->
+                                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder=" " maxlength="10"
+                                        autocomplete=off pattern="\d{10}">
+                                    <p class="error-message">Enter 10 digit phone number</p>
+                                    <!-- value="+91 " -->
+                                    <!-- inputmode="numeric" -->
                                 </div>
 
                             </div>
 
                             <div class="formThree">
+                                <!-- pattern="/^[\w@-]{8,12}$/" -->
                                 <div>
-                                    <label for="password">Password</label>
-                                    <input type="password" name="password" id="password">
+                                    <label for="newPassword">Password</label>
+                                    <input type="password" name="newPassword" id="newPassword" placeholder=" "
+                                        autocomplete=off>
+                                    <p class="error-message">Password must be a alphanumeric,
+                                        (@, _, and - are also allowed) and must
+                                        be a 8-20 character</p>
                                 </div>
 
                                 <div>
                                     <label for="confirmPassword">Confirm Password</label>
-                                    <input type="text" name="confirmPassword" id="confirmPassword">
+                                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder=" "
+                                        autocomplete=off>
+                                    <p class="error-message">Password does not match</p>
                                 </div>
                             </div>
 
-                        </form>
+
                     </div>
                 </div>
                 <div class="mainBottom">
@@ -95,9 +110,10 @@
                         <button>Create Account</button>
                     </div>
                     <div>
-                        <span>Already Have An Account? Login </span>
+                        <span>Already Have An Account? </span>
                     </div>
                 </div>
+                </form>
             </div>
         </div>
     </div>

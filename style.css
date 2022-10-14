@@ -79,22 +79,50 @@ body {
 .formControl {
     background-color: rgb(255, 255, 255);
     padding-bottom: 2rem;
-    box-shadow: 1px 5px 7px 2px rgba(0, 0, 0, 0.13);
+    box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.041);
     padding-left: var(--padding-left-content);
 }
 
 input {
     display: block;
     border: none;
-    border: 1px solid gainsboro;
+    outline: 1px solid gainsboro;
     border-radius: 5px;
     width: 15rem;
     height: 1.3rem;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    /* font-weight: lighter; */
 }
 
 input:focus {
-    background-color: rgba(0, 0, 0, 0.171);
-    border: none;
+    background-color: rgba(0, 0, 0, 0.050);
+    outline: 2px solid rgb(29, 100, 231);
+    box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.164);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    outline: 2px solid red;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid~.error-message {
+    display: inline-block;
+}
+
+
+.error-message {
+    display: none;
+    font-weight: bold;
+    color: red;
+    font-size: 0.7rem;
+    text-align: left;
+    width: 21em;
+    margin-bottom: 0;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+    outline: 2px solid rgba(111, 153, 111, 0.808);
 }
 
 .formOne,
@@ -115,6 +143,12 @@ input:focus {
     flex-direction: column;
     gap: 2rem;
     padding-left: var(--padding-left-content);
+}
+
+.mainBottom span::after {
+    content: "Login";
+    color: rebeccapurple;
+    font-weight: bold;
 }
 
 button {
