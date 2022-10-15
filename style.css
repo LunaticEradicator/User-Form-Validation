@@ -41,6 +41,14 @@ body {
     max-height: 15vh;
 }
 
+.show {
+    max-width: 100vw;
+    max-height: 1.5vh;
+    /* position: absolute; */
+    /* right: 8rem; */
+    /* background-color: rebeccapurple; */
+}
+
 .logoText {
     font-weight: bold;
     font-size: 5.5rem;
@@ -88,13 +96,40 @@ input {
     border: none;
     outline: 1px solid gainsboro;
     border-radius: 5px;
-    width: 15rem;
-    height: 1.3rem;
+    width: 16rem;
+    height: 1.5rem;
     margin-top: 0.5rem;
     font-size: 1.1rem;
     color: rgb(0, 0, 0);
     /* font-weight: lighter; */
 }
+
+/* .relatedClass {
+    position: relative;
+} */
+
+#eye1,
+#eye1Slash {
+    position: absolute;
+    right: 55%;
+    top: 62.5%;
+    transform: translate(0, -50%);
+}
+
+#eye1,
+#eye2 {
+    font-size: 0px;
+}
+
+#eye2,
+#eye2Slash {
+    position: absolute;
+    right: 38%;
+    top: 62.5%;
+    transform: translate(0, -50%);
+}
+
+
 
 input:focus {
     background-color: rgba(0, 0, 0, 0.050);
@@ -107,7 +142,7 @@ input:not(:focus):not(:placeholder-shown):invalid {
 }
 
 input:not(:focus):not(:placeholder-shown):invalid~.error-message {
-    display: inline-block;
+    display: block;
 }
 
 

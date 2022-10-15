@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Validation</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="./script.js" defer></script>
 </head>
 
@@ -75,7 +76,7 @@
                                 <div>
                                     <label for="phoneNumber">Phone Number</label>
                                     <input type="tel" name="phoneNumber" id="phoneNumber" placeholder=" " maxlength="10"
-                                        autocomplete=off pattern="\d{10}">
+                                        pattern="^([\d]{10})$" autocomplete=off>
                                     <p class="error-message">Enter 10 digit phone number</p>
                                     <!-- value="+91 " -->
                                     <!-- inputmode="numeric" -->
@@ -84,25 +85,26 @@
                             </div>
 
                             <div class="formThree">
-                                <!-- pattern="/^[\w@-]{8,12}$/" -->
-                                <div>
+                                <div class="relatedClass">
                                     <label for="newPassword">Password</label>
                                     <input type="password" name="newPassword" id="newPassword" placeholder=" "
-                                        autocomplete=off>
+                                        pattern="^([\w@-_/.]{8,20})$" autocomplete=off maxlength="20">
+                                    <i class="fa-sharp fa-solid fa-eye" id="eye1"></i>
+                                    <i class="fa-sharp fa-solid fa-eye-slash" id="eye1Slash"></i>
                                     <p class="error-message">Password must be a alphanumeric,
-                                        (@, _, and - are also allowed) and must
+                                        (@ , _ , - , . are also allowed) and must
                                         be a 8-20 character</p>
                                 </div>
 
                                 <div>
                                     <label for="confirmPassword">Confirm Password</label>
                                     <input type="password" name="confirmPassword" id="confirmPassword" placeholder=" "
-                                        autocomplete=off>
+                                        pattern="^([\w@-_/.]{8,20})$" maxlength="20" autocomplete=off>
+                                    <i class="fa-sharp fa-solid fa-eye" id="eye2"></i>
+                                    <i class="fa-sharp fa-solid fa-eye-slash" id="eye2Slash"></i>
                                     <p class="error-message">Password does not match</p>
                                 </div>
                             </div>
-
-
                     </div>
                 </div>
                 <div class="mainBottom">
