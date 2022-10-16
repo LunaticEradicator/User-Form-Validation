@@ -2,13 +2,14 @@ const newPassword = document.getElementById("newPassword");
 const confirmPassword = document.getElementById("confirmPassword");
 const errorMessage = document.querySelector(".error-Message");
 
+
 const eye1 = document.getElementById("eye1");
 const eye1Slash = document.getElementById("eye1Slash");
-
-
 const eye2 = document.getElementById("eye2");
 const eye2Slash = document.getElementById("eye2Slash");
 
+const emailId = document.getElementById("emailId");
+// const emailIdPattern = /^ ([a - z\d\.-\_]) +@([a - z\d -]) +\.([a - z]{ 2, 8 }) (\.[a - z]{ 2, 8 })?$/;
 
 function validatePassword() {
     console.log(newPassword.value)
@@ -54,7 +55,4 @@ eye2Slash.addEventListener("click", e => {
         confirmPassword.type = "password";
     })
 })
-
-
-
 

@@ -5,7 +5,6 @@
 body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
-    /* padding: 0px; */
 }
 
 
@@ -17,20 +16,22 @@ body {
 .backGround {
     width: 35rem;
     height: 58.6rem;
+    object-position: bottom
 }
 
 .main {
     flex-grow: 1;
+    background-color: #e9e9ebef;
 }
 
 .logoArrange {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(253, 253, 253, 0.014);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.5em 0;
     position: absolute;
-    top: 20vh;
+    top: 14vh;
     width: 35rem;
     /* width: 29.4%; */
     /* width: 59.8vh; */
@@ -38,7 +39,7 @@ body {
 
 .logo {
     max-width: 100vw;
-    max-height: 15vh;
+    max-height: 25vh;
 }
 
 .show {
@@ -51,8 +52,9 @@ body {
 
 .logoText {
     font-weight: bold;
-    font-size: 5.5rem;
-    color: rgb(255, 255, 255);
+    font-size: 9.5rem;
+    color: rgb(114, 113, 113);
+    /* text-align: center; */
 }
 
 .mainTopSection {
@@ -85,10 +87,12 @@ body {
 }
 
 .formControl {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(252, 249, 249, 0.171);
     padding-bottom: 2rem;
-    box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.041);
+    box-shadow: 0 7px 20px rgba(102, 51, 153, 0.253);
+    /* box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.041); */
     padding-left: var(--padding-left-content);
+    color: rebeccapurple;
 }
 
 input {
@@ -96,23 +100,19 @@ input {
     border: none;
     outline: 1px solid gainsboro;
     border-radius: 5px;
-    width: 16rem;
+    width: 21rem;
     height: 1.5rem;
     margin-top: 0.5rem;
     font-size: 1.1rem;
     color: rgb(0, 0, 0);
-    /* font-weight: lighter; */
 }
 
-/* .relatedClass {
-    position: relative;
-} */
 
 #eye1,
 #eye1Slash {
     position: absolute;
-    right: 55%;
-    top: 62.5%;
+    right: 50.7%;
+    top: 65.5%;
     transform: translate(0, -50%);
 }
 
@@ -124,9 +124,20 @@ input {
 #eye2,
 #eye2Slash {
     position: absolute;
-    right: 38%;
-    top: 62.5%;
+    right: 16%;
+    top: 65.5%;
     transform: translate(0, -50%);
+}
+
+.error-message {
+    visibility: hidden;
+    font-weight: bold;
+    color: red;
+    font-size: 0.7rem;
+    text-align: left;
+    width: 30em;
+    margin-bottom: 0;
+    margin-top: 0.2rem;
 }
 
 
@@ -142,19 +153,9 @@ input:not(:focus):not(:placeholder-shown):invalid {
 }
 
 input:not(:focus):not(:placeholder-shown):invalid~.error-message {
-    display: block;
+    visibility: visible;
 }
 
-
-.error-message {
-    display: none;
-    font-weight: bold;
-    color: red;
-    font-size: 0.7rem;
-    text-align: left;
-    width: 21em;
-    margin-bottom: 0;
-}
 
 input:not(:focus):not(:placeholder-shown):valid {
     outline: 2px solid rgba(111, 153, 111, 0.808);
@@ -164,12 +165,20 @@ input:not(:focus):not(:placeholder-shown):valid {
 .formTwo,
 .formThree {
     display: flex;
-    gap: 4rem;
+    gap: 20rem;
+    /* justify-content: space-around; */
 }
 
+.formOne,
 .formTwo,
 .formThree {
-    margin-top: 1rem;
+    margin-top: 0.3rem;
+}
+
+.formOne {
+    margin-bottom: 1.1rem;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .mainBottom {
@@ -192,7 +201,7 @@ button {
     height: 3rem;
     font-size: 1.2rem;
     border: none;
-    background-color: rgba(65, 92, 65, 0.815);
+    background-color: rebeccapurple;
     color: white;
     box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.5);
 }
