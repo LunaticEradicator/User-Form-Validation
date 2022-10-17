@@ -8,8 +8,7 @@ const eye1Slash = document.getElementById("eye1Slash");
 const eye2 = document.getElementById("eye2");
 const eye2Slash = document.getElementById("eye2Slash");
 
-const emailId = document.getElementById("emailId");
-// const emailIdPattern = /^ ([a - z\d\.-\_]) +@([a - z\d -]) +\.([a - z]{ 2, 8 }) (\.[a - z]{ 2, 8 })?$/;
+
 
 function validatePassword() {
     console.log(newPassword.value)
@@ -27,32 +26,37 @@ function validatePassword() {
 
 newPassword.onchange = validatePassword;
 confirmPassword.onkeyup = validatePassword;
+showPassword();
 
-eye1Slash.addEventListener("click", e => {
-    console.log("clicked");
-    if (newPassword.type === "password") {
-        eye1Slash.style.fontSize = "0px";
-        eye1.style.fontSize = "1.2rem";
-        newPassword.type = "text";
-    }
-    eye1.addEventListener("click", e => {
-        eye1Slash.style.fontSize = "1.2rem";
-        eye1.style.fontSize = "0px";
-        newPassword.type = "password";
+function showPassword() {
+    eye1Slash.addEventListener("click", e => {
+        console.log("clicked");
+        if (newPassword.type === "password") {
+            eye1Slash.style.fontSize = "0px";
+            eye1.style.fontSize = "1.2rem";
+            newPassword.type = "text";
+        }
+        eye1.addEventListener("click", e => {
+            eye1Slash.style.fontSize = "1.2rem";
+            eye1.style.fontSize = "0px";
+            newPassword.type = "password";
+        })
     })
-})
 
-eye2Slash.addEventListener("click", e => {
-    console.log("clicked");
-    if (confirmPassword.type === "password") {
-        eye2Slash.style.fontSize = "0px";
-        eye2.style.fontSize = "1.2rem";
-        confirmPassword.type = "text";
-    }
-    eye2.addEventListener("click", e => {
-        eye2Slash.style.fontSize = "1.2rem";
-        eye2.style.fontSize = "0px";
-        confirmPassword.type = "password";
+    eye2Slash.addEventListener("click", e => {
+        console.log("clicked");
+        if (confirmPassword.type === "password") {
+            eye2Slash.style.fontSize = "0px";
+            eye2.style.fontSize = "1.2rem";
+            confirmPassword.type = "text";
+        }
+        eye2.addEventListener("click", e => {
+            eye2Slash.style.fontSize = "1.2rem";
+            eye2.style.fontSize = "0px";
+            confirmPassword.type = "password";
+        })
     })
-})
+
+}
+
 
