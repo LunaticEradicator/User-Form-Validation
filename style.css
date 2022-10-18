@@ -1,222 +1,214 @@
-:root {
-    --padding-left-content: 2.5rem;
-    --font-color: rgb(36, 163, 136);
-}
+   @import url('https://fonts.googleapis.com/css2?family=Jost&family=Noto+Serif+JP&display=swap');
 
-body {
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    margin: 0;
-}
+   :root {
+       --padding-left-content: 2.5rem;
+       --font-color: rgb(36, 163, 136);
+   }
 
-
-.content {
-    display: flex;
-    background-color: rgb(254, 255, 255);
-    height: 100vh;
-}
-
-.backGround {
-    width: 43rem;
-    height: 100vh;
-    object-position: bottom;
-
-}
-
-.main {
-    flex-grow: 1;
-    background-color: #29614c36;
-    /* max-height: 100vh; */
-}
-
-.logoArrange {
-    /* background-color: rgba(253, 253, 253, 0.014); */
-    display: flex;
-    align-items: center;
-    padding: 0.5em 0;
-    position: absolute;
-    top: -0.5vh;
-    left: 22vh;
-    align-items: center;
-    /* width: 30rem; */
-}
-
-.logo {
-    max-width: 100vw;
-    max-height: 44vh;
-    color: white;
-
-}
-
-.show {
-    max-width: 100vw;
-    max-height: 1.5vh;
-}
-
-.logoText {
-    font-weight: bold;
-    font-size: 1.5rem;
-    /* color: rgb(255, 255, 255); */
-    color: var(--font-color);
-    font-style: italic;
-    font-weight: 400;
-}
-
-.mainTopSection {
-    margin-top: 10vh;
-    width: 70rem;
-    font-size: 1.3rem;
-    padding-left: var(--padding-left-content);
-
-}
-
-.mainTopTextOne {
-    color: var(--font-color);
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: right;
-    font-style: italic;
-
-}
-
-.author {
-    font-size: 1.2rem;
-}
-
-.mainTopTextTwo {}
-
-.userValidationSection {
-    margin-top: 4rem;
-    /* width: 100%; */
-}
-
-.formClass {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-}
-
-.formControl {
-    background-color: rgba(252, 249, 249, 0.171);
-    padding-bottom: 2rem;
-    box-shadow: rgba(37, 48, 75, 0.35) 0px 5px 15px;
-    /* box-shadow: 1px 1px 15px 2px var(--font-color); */
-    /* box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.041); */
-    padding-left: var(--padding-left-content);
-    color: var(--font-color);
-    border-radius: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    /* max-width: 77%; */
-
-}
-
-input {
-    display: block;
-    border: none;
-    outline: 1px solid gainsboro;
-    border-radius: 5px;
-    width: 21rem;
-    height: 1.5rem;
-    margin-top: 0.5rem;
-    font-size: 1.1rem;
-    color: rgb(0, 0, 0);
-}
+   body {
+       /* font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+       font-family: 'Jost', sans-serif;
+       font-family: 'Noto Serif JP', serif;
+       margin: 0;
+       color: rgb(33, 65, 58);
+   }
 
 
-#eye1,
-#eye1Slash {
-    position: absolute;
-    right: 43.7%;
-    top: 63.4%;
-    transform: translate(0, -50%);
-}
+   .content {
+       display: flex;
+       background-color: rgb(254, 255, 255);
+       height: 100vh;
+   }
 
-#eye1,
-#eye2 {
-    font-size: 0px;
-}
+   .backGround {
+       width: 43rem;
+       height: 100vh;
+       object-position: bottom;
 
-#eye2,
-#eye2Slash {
-    position: absolute;
-    right: 9%;
-    top: 63.4%;
-    transform: translate(0, -50%);
-}
+   }
 
-.error-message {
-    visibility: hidden;
-    font-weight: bold;
-    color: red;
-    font-size: 0.7rem;
-    text-align: left;
-    width: 30em;
-    margin-bottom: 0;
-    margin-top: 0.2rem;
-}
+   .main {
+       flex-grow: 1;
+       background-color: #29614c36;
+       /* max-height: 100vh; */
+   }
+
+   .logoArrange {
+       /* background-color: rgba(253, 253, 253, 0.014); */
+       display: flex;
+       align-items: center;
+       padding: 0.5em 0;
+       position: absolute;
+       top: -0.5vh;
+       left: 22vh;
+       align-items: center;
+       /* width: 30rem; */
+   }
+
+   .logo {
+       max-width: 100vw;
+       max-height: 44vh;
+       color: white;
+
+   }
+
+   .show {
+       max-width: 100vw;
+       max-height: 1.5vh;
+   }
+
+   .logoText {
+       font-weight: bold;
+       font-size: 1.5rem;
+       font-style: italic;
+       color: var(--font-color);
+   }
+
+   .mainTopSection {
+       margin-top: 10vh;
+       width: 70rem;
+       font-size: 1.3rem;
+       padding-left: var(--padding-left-content);
+   }
+
+   .mainTopTextOne {
+       color: var(--font-color);
+       margin-bottom: 2rem;
+       font-size: 2rem;
+       font-weight: bold;
+       font-style: italic;
+       text-align: right;
+   }
+
+   .author {
+       font-size: 1.2rem;
+   }
+
+   .userValidationSection {
+       margin-top: 4rem;
+   }
+
+   .formClass {
+       font-size: 1.2rem;
+       margin-top: 1rem;
+   }
+
+   .formControl {
+       background-color: rgba(252, 249, 249, 0.171);
+       padding-bottom: 2rem;
+       box-shadow: rgba(37, 48, 75, 0.35) 0px 5px 15px;
+       font-weight: bold;
+       padding-left: var(--padding-left-content);
+       color: rgb(33, 65, 58);
+       border-radius: 20px;
+       margin-left: 5px;
+       margin-right: 5px;
+   }
+
+   input {
+       display: block;
+       border: none;
+       outline: 1px solid gainsboro;
+       border-radius: 5px;
+       width: 21rem;
+       height: 1.5rem;
+       margin-top: 0.5rem;
+       font-size: 1.1rem;
+       color: rgb(0, 0, 0);
+   }
+
+
+   #eye1,
+   #eye1Slash {
+       position: absolute;
+       right: 43.7%;
+       top: 65.4%;
+       transform: translate(0, -50%);
+   }
+
+   #eye1,
+   #eye2 {
+       font-size: 0px;
+   }
+
+   #eye2,
+   #eye2Slash {
+       position: absolute;
+       right: 9%;
+       top: 65.4%;
+       transform: translate(0, -50%);
+   }
+
+   .error-message {
+       visibility: hidden;
+       font-weight: bold;
+       color: red;
+       font-size: 0.7rem;
+       text-align: left;
+       width: 30em;
+       margin-bottom: 0;
+       margin-top: 0.2rem;
+   }
 
 
 
-input:focus {
-    background-color: rgba(0, 0, 0, 0.050);
-    outline: 2px solid rgb(29, 100, 231);
-    box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.164);
-}
+   input:focus {
+       background-color: rgba(0, 0, 0, 0.050);
+       outline: 2px solid rgb(29, 100, 231);
+       box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.164);
+   }
 
-input:not(:focus):not(:placeholder-shown):invalid {
-    outline: 2px solid red;
-}
+   input:not(:focus):not(:placeholder-shown):invalid {
+       outline: 2px solid red;
+   }
 
-input:not(:focus):not(:placeholder-shown):invalid~.error-message {
-    visibility: visible;
-}
+   input:not(:focus):not(:placeholder-shown):invalid~.error-message {
+       visibility: visible;
+   }
 
 
-input:not(:focus):not(:placeholder-shown):valid {
-    outline: 2px solid rgba(111, 153, 111, 0.808);
-}
+   input:not(:focus):not(:placeholder-shown):valid {
+       outline: 2px solid rgba(111, 153, 111, 0.808);
+   }
 
-.formOne,
-.formTwo,
-.formThree {
-    display: flex;
-    gap: 20rem;
-    /* justify-content: space-around; */
-}
+   .formOne,
+   .formTwo,
+   .formThree {
+       display: flex;
+       gap: 20rem;
+   }
 
-.formOne,
-.formTwo,
-.formThree {
-    margin-top: 0.3rem;
-}
+   .formOne,
+   .formTwo,
+   .formThree {
+       margin-top: 0.3rem;
+   }
 
-.formOne {
-    margin-bottom: 1.1rem;
-    /* display: flex;
-    justify-content: space-between; */
-}
+   .formOne {
+       margin-bottom: 1.1rem;
+   }
 
-.mainBottom {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-left: var(--padding-left-content);
-}
+   .mainBottom {
+       margin-top: 2rem;
+       display: flex;
+       flex-direction: column;
+       gap: 2rem;
+       padding-left: var(--padding-left-content);
+   }
 
-.mainBottom span::after {
-    content: "Login";
-    color: var(--font-color);
-    font-weight: bold;
-}
+   .mainBottom span::after {
+       content: "Login";
+       color: var(--font-color);
+       font-weight: bold;
+   }
 
-button {
-    border-radius: 10px;
-    width: 14rem;
-    height: 3rem;
-    font-size: 1.2rem;
-    border: none;
-    background-color: var(--font-color);
-    color: white;
-    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.5);
-}
+   button {
+       border-radius: 10px;
+       width: 14rem;
+       height: 3rem;
+       font-size: 1.2rem;
+       border: none;
+       background-color: var(--font-color);
+       color: white;
+       box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.5);
+   }
