@@ -124,11 +124,14 @@
        right: 43.7%;
        top: 65.4%;
        transform: translate(0, -50%);
+       cursor: pointer;
    }
 
    #eye1,
    #eye2 {
        font-size: 0px;
+       cursor: pointer;
+
    }
 
    #eye2,
@@ -137,6 +140,7 @@
        right: 9%;
        top: 65.4%;
        transform: translate(0, -50%);
+       cursor: pointer;
    }
 
    .shit {
@@ -204,7 +208,8 @@
        font-weight: bold;
    }
 
-   button {
+   button,
+   input[type=submit] {
        border-radius: 10px;
        width: 14rem;
        height: 3rem;
@@ -213,4 +218,5 @@
        background-color: var(--font-color);
        color: white;
        box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.5);
+       cursor: pointer;
    }
