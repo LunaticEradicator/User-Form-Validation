@@ -139,6 +139,10 @@
        transform: translate(0, -50%);
    }
 
+   .shit {
+       visibility: visible;
+   }
+
    .error-message {
        visibility: hidden;
        font-weight: bold;
@@ -150,10 +154,8 @@
        margin-top: 0.2rem;
    }
 
-
-
    input:focus {
-       background-color: rgba(0, 0, 0, 0.050);
+       background-color: rgb(255, 255, 255);
        outline: 2px solid rgb(29, 100, 231);
        box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.164);
    }
@@ -166,10 +168,10 @@
        visibility: visible;
    }
 
-
    input:not(:focus):not(:placeholder-shown):valid {
        outline: 2px solid rgba(111, 153, 111, 0.808);
    }
+
 
    .formOne,
    .formTwo,
